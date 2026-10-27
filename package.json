@@ -1,0 +1,50 @@
+{
+  "name": "@3xjn/roblox-css-compiler",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@csstools/selector-specificity": "^5.0.0",
+    "css-tree": "^3.2.1",
+    "culori": "^4.0.2",
+    "mdn-data": "^2.27.1",
+    "postcss": "^8.5.31",
+    "postcss-nesting": "^13.0.0",
+    "postcss-selector-parser": "^7.1.0",
+    "postcss-value-parser": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/css-tree": "^3.2.0",
+    "@types/culori": "^4.0.1",
+    "typescript": "~5.8.3",
+    "@types/node": "^24.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3xjn/roblox-css-compiler.git"
+  },
+  "homepage": "https://github.com/3xjn/roblox-css-compiler#readme",
+  "bugs": {
+    "url": "https://github.com/3xjn/roblox-css-compiler/issues"
+  },
+  "description": "Compile CSS into the stylesheet format consumed by Roblox CSS.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18.0"
+  }
+}
